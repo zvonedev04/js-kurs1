@@ -11,3 +11,7 @@ while (brojac < broj_novcanica) {
 }
 
 
+if(brojac < broj_novcanica)
+    console.log('brojac je manji');
+
+STAO SAM NA 1:42:56
