@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cysecor</title>
+	<title>Kalkulator inflacije</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
-    <h1>Pozdrav svima</h1>
+	<div class="background-overlay">
 
-    <div id="poruka"></div>
+		<h1>Kalkulator inflacije</h1>
 
-    <script src="script.js">
+		<div class="container">
+			<h3>Stopa inflacije: <input type="number" min="0.1" id="inflationRate"> %</h3> <br>
+			<h3>Izračunaj koliko će <input type="number" min="1" id="money"> € da vrijedi za 
+				<input type="number" min="1" id="years"> godina?</h3>
 
-    </script>
+			<button onclick="inflationCalculator()">Izračunaj</button>
+		</div>
 
+	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>
